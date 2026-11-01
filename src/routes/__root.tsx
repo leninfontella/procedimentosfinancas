@@ -78,13 +78,12 @@ const getSiteOrigin = createIsomorphicFn()
 const appName = "Procedimentos de Finanças";
 const shareDescription =
   "Cada real faz parte da sua história. Registre suas despesas e acompanhe seus gastos.";
-const shareImageAlt =
-  "Título Procedimentos de Finanças em branco e coral sobre fundo escuro, com o ícone de carteira";
+const shareImageAlt = "Cinco pessoas sorrindo em volta de um notebook numa mesa de reunião";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   beforeLoad: () => ({ siteOrigin: getSiteOrigin() }),
   head: ({ match: { context } }) => {
-    const shareImage = `${context.siteOrigin}/images/compartilhar-financas.jpg`;
+    const shareImage = `${context.siteOrigin}/images/compartilhar-equipe.jpg`;
     return {
       meta: [
         { charSet: "utf-8" },
