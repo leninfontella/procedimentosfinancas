@@ -7,7 +7,6 @@ import {
   ArrowUp,
   Check,
   ChevronRight,
-  Ellipsis,
   Filter,
   Scale,
   Eye,
@@ -882,6 +881,9 @@ function Index({
               <MonthNav month={month} onChange={setMonth} className="mobile-only" />
               <div className="hd-row">
                 <div className="hd-title">
+                  <span className="hd-icon" aria-hidden="true">
+                    <Receipt size={40} strokeWidth={1.6} />
+                  </span>
                   <h1 tabIndex={-1}>
                     Controle <span>de Despesas</span>
                   </h1>
@@ -1095,6 +1097,9 @@ function Index({
           <>
             <header className="hd hd-page">
               <div className="hd-title">
+                <span className="hd-icon" aria-hidden="true">
+                  <Settings size={40} strokeWidth={1.6} />
+                </span>
                 <h1 tabIndex={-1}>
                   Suas <span>Configurações</span>
                 </h1>
@@ -1157,8 +1162,8 @@ function Index({
             onClick={() => navigate("config")}
             aria-current={view === "config" ? "page" : undefined}
           >
-            <Ellipsis size={22} strokeWidth={2} aria-hidden="true" />
-            <span>Mais</span>
+            <Settings size={22} strokeWidth={1.7} aria-hidden="true" />
+            <span>Configurar</span>
           </button>
         </nav>
       )}

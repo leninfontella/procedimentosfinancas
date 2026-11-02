@@ -197,6 +197,13 @@ export function DespesaForm({
           </button>
         </div>
         <div className="hd-title">
+          <span className="hd-icon" aria-hidden="true">
+            {editing ? (
+              <Pencil size={38} strokeWidth={1.6} />
+            ) : (
+              <Plus size={44} strokeWidth={1.6} />
+            )}
+          </span>
           <h1 tabIndex={-1}>
             {editing ? "Editar" : "Nova"} <span>despesa</span>
           </h1>

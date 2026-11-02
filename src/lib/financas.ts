@@ -77,7 +77,7 @@ export const CATEGORIAS: CategoriaInfo[] = [
   { nome: "Vestuário", icon: Shirt, cor: "#8e1b10" },
   { nome: "Pets", icon: PawPrint, cor: "#a0673b" },
   { nome: "Viagem", icon: Plane, cor: "#2c7da0" },
-  { nome: "Outros", icon: Ellipsis, cor: "#5a5a60" },
+  { nome: "Outros", icon: Ellipsis, cor: "#2a2a2c" },
 ];
 
 /** Atalhos do Painel. */
